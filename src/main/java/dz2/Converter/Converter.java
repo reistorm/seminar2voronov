@@ -21,6 +21,7 @@ public class Converter {
                 "Celsius=" + celsius +
                 '}';
     }
+
     public void setCelsius(Double celsius) {
         celsius = celsius;
     }
