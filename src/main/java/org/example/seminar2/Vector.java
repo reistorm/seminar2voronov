@@ -1,4 +1,4 @@
-package org.example;
+package org.example.seminar2;
 
 /*Задача на ООП:
 1) общий класс (Vector)
