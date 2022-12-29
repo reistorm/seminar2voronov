@@ -6,4 +6,5 @@ public class convertValue {
         System.out.println("Fahrenheit = " + converter.celsiusToFahrenheit());
         System.out.println("Kelvin = " + converter.celsiusToKelvin());
     }
+
 }
