@@ -8,6 +8,7 @@ public class Produce {
     private String country;
     private Double weight;
     private Double price;
+
     private String grade;
 
     public String getName() {
