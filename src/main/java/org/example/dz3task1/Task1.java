@@ -35,7 +35,7 @@ public class Task1 {
 
                 }
                 maxPriceProduct += maxPriceProduct + maxPrice;
-                System.out.println("Товары = " + setGrade);
+
                 System.out.println("maxPriceProduct = " + maxPriceProduct);
             }
 
@@ -45,19 +45,4 @@ public class Task1 {
 
     }
 
-
-//setGrade.add(listProduct.get(i+1).getGrade());
-//                maxPriceProduct += listProduct.get(i+1).getPrice();
-//                System.out.println(setGrade);
-//                System.out.println(maxPriceProduct);
 }
-
-
-//            if (listProduct.get(i).getGrade().equals(search)) {
-//                setGrade.add(listProduct.get(i).getGrade());
-////                maxPriceProduct += listProduct.get(i).getPrice();
-//                for (int j = 0; j < listProduct.size()-1; j++) {
-//                    maxPrice = listProduct.get(j).getPrice();
-//                    if (listProduct.get(j + 1).getPrice() > maxPrice) {
-//                        maxPriceProduct += listProduct.get(j + 1).getPrice();
-//                        System.out.println("maxPriceProduct = " + maxPriceProduct);
