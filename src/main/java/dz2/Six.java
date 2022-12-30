@@ -25,9 +25,6 @@ public class Six {
             }
             System.out.println(mass[i]);
         }
-
-
-
         scanner.close();
     }
 }
