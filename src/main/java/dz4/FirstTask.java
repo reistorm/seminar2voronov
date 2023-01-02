@@ -20,5 +20,4 @@ public class FirstTask {
         }
         System.out.println(reverseLinkedList);
     }
-
 }
