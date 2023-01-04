@@ -12,6 +12,7 @@ public class SecondTask {
         String str = "What must be, must be. What the heart thinks the tongue speaks.";
         str = str.toLowerCase();
         str = str.replace(".", "");
+        str = str.replace(",", "");
         String[] words = str.split(" ");
         Scanner scanner = new Scanner(System.in);
         System.out.println("Input your word: ");
@@ -24,13 +25,11 @@ public class SecondTask {
             if (words[i].equals(userWord)) {
                 map.put(userWord, map.get(userWord) + 1);
             }
-//            else {
-//                map.put(userWord, 1);
-//            }
         }
-        for (Map.Entry<String, Integer> entry :map.entrySet()) {
-            System.out.println("Words - " + entry.getKey() + " meets - " + entry.getValue());
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            System.out.println("Word " + entry.getKey() + " meets - " + entry.getValue());
 
         }
+
     }
 }
