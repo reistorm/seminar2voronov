@@ -1,6 +1,6 @@
 package dz2;
 //Дана последовательность N целых чисел. Найти сумму простых чисел.
-
+// исправила на сумму простых чисел
 import java.util.Scanner;
 
 public class Third {
@@ -11,9 +11,13 @@ public class Third {
 
         for (int i = 0; i < n; i++) {
             a = scanner.nextInt();
-            sum += a;
+            for (int k = 2; k <= a; k++) {
+                if (a % k == 0) {
+                    sum += a;
+                }
+            }
         }
-        System.out.println("sum = "+ sum);
+        System.out.println("sum = " + sum);
         scanner.close();
     }
 }

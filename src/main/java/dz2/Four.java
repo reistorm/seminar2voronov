@@ -1,14 +1,11 @@
 package dz2;
 //Дана последовательность из N целых чисел.
 // Верно ли, что последовательность является возрастающей.
-
+// ввела счетчик для ситуации, в которой может быть false
 import java.util.Scanner;
-
-//Дана последовательность из N целых чисел.
-//Верно ли, что последовательность является возрастающей.
 public class Four {
     public static void main(String[] args) {
-        int a, b, n;
+        int a, b, n, f = 0;
         Scanner scanner = new Scanner(System.in);
         n = scanner.nextInt();
         a = scanner.nextInt();
@@ -18,14 +15,19 @@ public class Four {
             if (a < b) {
                 result = true;
                 a = b;
-            }
-            else {
+            } else {
+                f++;
                 result = false;
             }
 
         }
         scanner.close();
-        System.out.println(result);
+        if ((result == true) && (f < 1)) {
+            System.out.println(result);
+        } else {
+            System.out.println("Последовательность не является возрастающей");
+        }
     }
-
 }
+
+
