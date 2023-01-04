@@ -30,7 +30,7 @@ public class SecondTask {
                 break;
             }
         }
-        if ((result == true) && (f < 1)) {
+        if ((result == true) && (f < 0)) {
             System.out.println("Список является знакочередующимся");
         } else {
             System.out.println("Список не является знакочередующимся");
