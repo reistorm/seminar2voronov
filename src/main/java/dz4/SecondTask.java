@@ -29,6 +29,7 @@ public class SecondTask {
                 f += 1;
                 break;
             }
+
         }
         if ((result == true) && (f < 0)) {
             System.out.println("Список является знакочередующимся");
