@@ -35,10 +35,10 @@ public class Task {
         for (int i = 0; i < listLaptops.size(); i++) {
             Laptops laptops = listLaptops.get(i);
             if((laptops.getRam() >= ram) | (laptops.getHdd() >= hdd)) {
-                outputLaptops.add(laptops);
-            }
-            else if ((laptops.getOs().equals(os)) || (laptops.getColour().equals(colour) || (laptops.getMaterial().equals(material)))) {
-                outputLaptops.add(laptops);
+//                outputLaptops.add(laptops);
+                if ((laptops.getOs().equals(os)) || (laptops.getColour().equals(colour) || (laptops.getMaterial().equals(material)))) {
+                    outputLaptops.add(laptops);
+                }
             }
 
         }
